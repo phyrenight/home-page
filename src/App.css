@@ -1,19 +1,49 @@
+html{
+  height: 100%;
+}
+
 body{
   text-align: center;
+  height: 100%;
+  border: 1px solid black;
 }
+
 ul {
   padding: 0%;
   list-style-type: none;
 }
+
 ul li{
   display: inline-block;
   padding: 5px;
 }
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:hover{
+  text-decoration: underline;
+}
+
 .App {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
+}
+
+main {
+  height: 80%;
+  border: 1px solid green;
+}
+
+footer {
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
 }
 
 
