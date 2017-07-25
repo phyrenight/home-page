@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AboutUs from './AboutUs.js';
+import { Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './App.css';
 
@@ -7,16 +8,27 @@ class App extends Component {
   render() {
     return (
       <div id="containsMain">
-        <Header />
-      <main>
-        <section className="mainSection">
-          <h2> Welcome to the home page</h2>
-        </section>
-        <AboutUs/>
-      </main>
-    <Footer/>
-    </div>
+        <Route exact path="/" component={ Home } />
+        <Route path="/AboutUs" component={ AboutUs } />
+      </div>
     );
+  }
+}
+
+class Home extends Component{
+  render() {
+    return(
+      <div>
+        <Header />
+        <main>
+          <section className="mainSection">
+            <h2> Welcome to the home page</h2>
+          </section>
+          <AboutUs/>
+        </main>
+        <Footer/>
+      </div>
+      )
   }
 }
 
@@ -45,8 +57,8 @@ class Footer extends Component{
     return(
       <footer>
         <ul role="navigation">
-          <li><a href="">Legal</a></li>
-          <li><a href="">About Us</a></li>
+          <li><Link to="/Legal">Legal</Link></li>
+          <li><Link to="/AboutUs">About Us</Link></li>
         </ul>
       </footer>
       )
