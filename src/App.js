@@ -4,7 +4,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div id="containsMain">
       <header className="App">
         <div className="App-header">
           <h1>Heading</h1>
@@ -25,7 +25,7 @@ class App extends Component {
       <footer>
         <ul role="navigation">
           <li><a href="">Legal</a></li>
-          <li><a href="">About US</a></li>
+          <li><a href="">About Us</a></li>
         </ul>
       </footer>
     </div>
