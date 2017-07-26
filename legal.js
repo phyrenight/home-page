@@ -8,7 +8,7 @@ class Legal extends Component{
       <div>
         <Header />
         <h2>Legal</h2>
-        <Footer />
+        <Footer/>
       </div>
 	)
   }
