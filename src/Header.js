@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 class Header extends Component {
   render(){
+  	  var i = 8;
     return(
       <header className="App">
         <div className="App-header">
@@ -10,7 +11,7 @@ class Header extends Component {
         </div>
         <nav role="navigation">
           <ul>
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/"${i}>Home</Link></li>
             <li><Link to="/content">Content</Link></li>
             <li><Link to="/AboutUs">About Us</Link></li>
           </ul>
